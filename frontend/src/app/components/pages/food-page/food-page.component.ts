@@ -14,7 +14,9 @@ food!:Food
 constructor(activatedroutes:ActivatedRoute,foodservices:FoodService,private cartService:CartService,private router:Router){
 activatedroutes.params.subscribe((params)=>{
   if(params.id)
-  this.food = foodservices.getFoodById(params.id)
+  foodservices.getFoodById(params.id).subscribe((serverFood)=>{
+    this.food=serverFood;
+  });
 })
 }
 addToCart(){
