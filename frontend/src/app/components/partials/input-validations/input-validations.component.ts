@@ -2,7 +2,9 @@ import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/cor
 import { AbstractControl } from '@angular/forms';
 const VALIDATION_MESSAGE:any={
   required:'should not be empty',
-  email:'Email is not valid'
+  email:'Email is not valid',
+  minlength:'Field is too short',
+  notMatch:'password and Confirm password does not match'
 }
 
 @Component({

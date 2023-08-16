@@ -15,4 +15,9 @@ form{
   justify-content:center;
   flex-direction: column;
 }
+.register{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 

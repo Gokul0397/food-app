@@ -66,6 +66,17 @@ export const sample_foods:any[]=[
     imageUrl: 'assets/food-6.jpg',
     tags: ['FastFood', 'Pizza', 'Lunch'],
   },
+  {
+    id:'7',
+    name: 'Vegetables Pizza',
+    price: 9,
+    cookTime: '40-50',
+    favorite: false,
+    origins: ['italy'],
+    stars: 4.0,
+    imageUrl: 'assets/food-6.jpg',
+    tags: ['FastFood', 'Pizza', 'Lunch'],
+  },
 ]
 export const sample_tags:any[]=[
   { name: 'All', count: 6 },

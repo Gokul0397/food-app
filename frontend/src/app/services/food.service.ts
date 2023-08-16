@@ -28,6 +28,6 @@ export class FoodService {
 
   }
   getFoodById(foodId:string):Observable<Food>{
-    return this.http.get<Food>(FOODS_BY_ID_URL);
+    return this.http.get<Food>(FOODS_BY_ID_URL + foodId);
   }
 }
